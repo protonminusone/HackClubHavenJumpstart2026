@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://b78wycmv8kv1i"]
+
+[ext_resource type="Texture2D" uid="uid://bteeihs0jc6n2" path="res://TheEnd.png" id="1_n735c"]
+[ext_resource type="Script" uid="uid://sv1mbp0suf6a" path="res://texture_rect.gd" id="2_egc6y"]
+
+[node name="Control" type="Control" unique_id=113336220]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1171206731]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_n735c")
+expand_mode = 1
+stretch_mode = 5
+script = ExtResource("2_egc6y")
+
+[node name="Label" type="Label" parent="TextureRect" unique_id=934771863]
+layout_mode = 0
+offset_left = 772.0
+offset_top = 584.0
+offset_right = 1013.0
+offset_bottom = 624.0
+theme_override_font_sizes/font_size = 29
+text = "Press R to restart"
